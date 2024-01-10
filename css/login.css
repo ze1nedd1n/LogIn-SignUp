@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #E5EFF8;
+}
+
+.Log {
+    border: 0px solid;
+    border-radius: 0.5rem 0px 0px 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+    align-items: center;
+    background: #FCFEFF;
+
+}
+.Log .main_text {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+    font-style: normal;
+    margin-top: 17vh;
+    margin-bottom: 0;
+}
+.Log .email {
+    width: 40rem;
+    height: 2.5rem;
+    padding: 0 2em;
+    border: 0px;
+    border-radius: 10px;
+    background: rgba(176, 186, 195, 0.40);  
+    margin-top: 12vh;
+}
+.Log .email ::before {
+    content: "email";
+}
+.Log .password {
+    margin-top: 7vh;
+    padding: 0 2em;
+    width: 40rem;
+    height: 2.5rem;
+    border: 0px;
+    border-radius: 10px;
+    background: rgba(176, 186, 195, 0.40);
+}
+.Log .log_here {
+    margin-top: 7vh;
+    width: 40rem;
+    height: 2.5rem;
+    border: 0px;
+    border-radius: 10px;
+    background: #E5EFF8;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Log p {
+    margin-top: 5vh;
+    color: #B0BAC3;
+    font-size: 26px;
+}
+.CreateAccount {
+    display: flex;
+    flex-direction: row;
+    width: 31vh;
+    justify-content: space-between;
+
+}
+.CreateAccount a {
+    color:  #6EB6FF;
+    text-decoration: none;
+    font-size: 15px;
+}
+.CreateAccount p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/*Свойства левой стороны */
+.Log_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+
+}
+.img {
+    width: 50vm;
+    height: 50vh;
+}
