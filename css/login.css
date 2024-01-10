@@ -36,19 +36,30 @@ body {
     border: 0px;
     border-radius: 10px;
     background: rgba(176, 186, 195, 0.40);  
-    margin-top: 12vh;
 }
-.Log .email ::before {
-    content: "email";
+.Log .text_email {
+    width: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    color: #7C838A;
+    margin-top: 10vh;
+    margin-bottom: 0;
 }
 .Log .password {
-    margin-top: 7vh;
     padding: 0 2em;
     width: 40rem;
     height: 2.5rem;
     border: 0px;
     border-radius: 10px;
     background: rgba(176, 186, 195, 0.40);
+}
+.Log .text_pass {
+    width: 40rem;
+    display: flex;
+    justify-content:flex-start ;
+    color: #7C838A;
+    margin-top: 5vh;
+    margin-bottom: 0;
 }
 .Log .log_here {
     margin-top: 7vh;
@@ -60,7 +71,7 @@ body {
     font-size: 20px;
     font-weight: 500;
 }
-.Log p {
+.Log .or {
     margin-top: 5vh;
     color: #B0BAC3;
     font-size: 26px;
