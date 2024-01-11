@@ -26,18 +26,18 @@ body {
     font-weight: 600;
     line-height: normal;
     font-style: normal;
-    margin-top: 14vh;
+    margin-top: 10vh;
     margin-bottom: 0;
 }
 .SignUp .nameText {
-    width: 49vw;
+    width: 48vw;
     display: flex;
     justify-content: flex-start;
     color: #7C838A;
     margin: 0;
 }
 .SignUp .emailText {
-    width: 49vw;
+    width: 48vw;
     display: flex;
     justify-content: flex-start;
     color: #7C838A;
@@ -45,7 +45,7 @@ body {
     margin-bottom: 0;
 }
 .SignUp .passText {
-    width: 49vw;
+    width: 48vw;
     display: flex;
     justify-content: flex-start;
     color: #7C838A;
@@ -79,7 +79,9 @@ body {
 .Age_Gender {
     display: flex;
     flex-direction: row;
+    width: 49vw;
     margin-top: 3vh;
+    justify-content: space-between;
 }
 .Age_Gender .age {
     width: 10vw;
@@ -99,16 +101,30 @@ body {
     color: #7C838A;
     margin: 0;
 }
+.Gender {
+    width: 30vw;
+}
 .genderText  {
     margin: 0;
+    color: #7C838A;
+
 }
 .genderTypes {
+    color: #7C838A;
     display: flex;
     flex-direction: row;
 }
+.genderTypes input {
+    color: #7C838A;
+    margin: 1vw;
+    fill: #DEE3E7;
+}
+.genderTypes label {
+    cursor: pointer;
+}
 .main_box #SignUp {
     margin-top: 4vh;
-    width: 50vw;
+    width: 49vw;
     height: 7vh;
     border: 0px;
     border-radius: 10px;
