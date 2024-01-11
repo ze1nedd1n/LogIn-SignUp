@@ -79,7 +79,7 @@ body {
 .CreateAccount {
     display: flex;
     flex-direction: row;
-    width: 31vh;
+    width: 19vw;
     justify-content: space-between;
 
 }
@@ -90,6 +90,7 @@ body {
 }
 .CreateAccount p {
     margin: 0;
+    color: #7C838A;
     font-size: 15px;
 }
 

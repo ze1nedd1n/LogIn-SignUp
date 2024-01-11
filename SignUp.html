@@ -4,35 +4,47 @@
         <meta charset="UTF-8 " />
         <meta name="viewport" content="width=device-width, initial-scale1.0" />
         <title>Sign-Up</title>
+        <link rel="stylesheet" href="/css/signup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
-        <main>
-            <h1>Create your Account</h1>
-            <p>Name</p>
-            <input type="text" name="" id="">
-            <p>Email</p>
-            <input type="text" name="" id="">
-            <p>Password</p>
-            <input type="text" name="" id="">
-            <div>
-                <p>Age</p>
-                <input type="number" name="" id="">
-                <p>Gender</p>
-                <input type="radio" name="" id="">
-                <p>Male</p>
-                <input type="radio" name="" id="">
-                <p>Female</p>
-            </div>
-            <button>Sign-Up</button>
-            <p class="or">- OR -</p>
-            <div class="CreateAccount">
-                <p>Create an account?</p>
-                <a class="SignUp" href="/SignUp.html">Sign-Up</a>
+        <main class="SignUp">
+            <div class="main_box">
+                <h1 class="createAccount">Create your Account</h1>
+                <p class="nameText">Name</p>
+                <input type="text" class="name" name="name" id="" placeholder="Enter your Name here">
+                <p class="emailText">Email</p>
+                <input type="email" class="email" name="Email" id="" placeholder="Enter your Email here">
+                <p class="passText">Password</p>
+                <input type="password" class="password" name="Password" id="" placeholder="Enter your Password here">
+                <div class="Age_Gender">
+                    <div class="age">
+                        <p class="AgeText">Age</p>
+                        <input type="number" name="Age"  id="Age" placeholder="18">
+                    </div>
+                    <div class="Gender">
+                        <p class="genderText">Gender</p>
+                        <div class="genderTypes">
+                            <input type="radio" name="" id="">
+                            <p>Male</p>
+                            <input type="radio" name="" id="">
+                            <p>Female</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="SignUp">Sign-Up</button>
+                <p class="or">- OR -</p>
+                <div class="Log_box">
+                    <p>Already have an account?</p>
+                    <a class="Login" href="/login.html">Login</a>
+                </div>
             </div>
 
         </main>
-        <aside>
-            <img src="/images/Finance, e-commerce, startup, workflow _ account, information, user, profile, data.png" alt="">
+        <aside class="SignUp_img">
+            <img src="/images/Finance, e-commerce, startup, workflow _ account, information, user, profile, data.png" class="img">
         </aside>
     </body>
 </html>

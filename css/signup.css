@@ -1,0 +1,155 @@
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #E5EFF8;
+}
+.main_box{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SignUp {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+    align-items: center;
+    background: #FCFEFF;
+
+}
+.SignUp .createAccount {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+    font-style: normal;
+    margin-top: 14vh;
+    margin-bottom: 0;
+}
+.SignUp .nameText {
+    width: 49vw;
+    display: flex;
+    justify-content: flex-start;
+    color: #7C838A;
+    margin: 0;
+}
+.SignUp .emailText {
+    width: 49vw;
+    display: flex;
+    justify-content: flex-start;
+    color: #7C838A;
+    margin-top: 7vh;
+    margin-bottom: 0;
+}
+.SignUp .passText {
+    width: 49vw;
+    display: flex;
+    justify-content: flex-start;
+    color: #7C838A;
+    margin-top: 4vh;
+    margin-bottom: 0;
+}
+.SignUp .name {
+    width: 45vw;
+    height: 7vh;
+    padding: 0 2em;
+    border: 0px;
+    border-radius: 10px;
+    background: rgba(176, 186, 195, 0.40);  
+}
+.SignUp .email {
+    width: 45vw;
+    height: 7vh;
+    padding: 0 2em;
+    border: 0px;
+    border-radius: 10px;
+    background: rgba(176, 186, 195, 0.40);  
+}
+.SignUp .password {
+    width: 45vw;
+    height: 7vh;
+    padding: 0 2em;
+    border: 0px;
+    border-radius: 10px;
+    background: rgba(176, 186, 195, 0.40);  
+}
+.Age_Gender {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+}
+.Age_Gender .age {
+    width: 10vw;
+}
+.Age_Gender .age #Age {
+    width: 4vw;
+    height: 7vh;
+    padding: 0 1vw;
+    border: 0px;
+    border-radius: 10px;
+    background: rgba(176, 186, 195, 0.40); 
+}
+.AgeText {
+    width: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    color: #7C838A;
+    margin: 0;
+}
+.genderText  {
+    margin: 0;
+}
+.genderTypes {
+    display: flex;
+    flex-direction: row;
+}
+.main_box #SignUp {
+    margin-top: 4vh;
+    width: 50vw;
+    height: 7vh;
+    border: 0px;
+    border-radius: 10px;
+    background: #E5EFF8;
+    font-size: 20px;
+    font-weight: 500;
+}
+.main_box .or {
+    margin-top: 5vh;
+    color: #B0BAC3;
+    font-size: 26px;
+    margin: 2vh;
+}
+.Log_box {
+    display: flex;
+    flex-direction: row;
+    width: 21vw;
+    justify-content: space-between;
+}
+.Log_box a {
+    color:  #6EB6FF;
+    text-decoration: none;
+    font-size: 15px;
+}
+.Log_box p {
+    margin: 0;
+    color: #7C838A;
+    font-size: 15px;
+}
+
+
+/* Правая часть страницы */
+.SignUp_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+
+}
+
+.img {
+    width: 50vm;
+    height: 50vh;
+}
