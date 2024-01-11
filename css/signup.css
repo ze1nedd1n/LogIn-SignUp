@@ -81,10 +81,14 @@ body {
     flex-direction: row;
     width: 49vw;
     margin-top: 3vh;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .Age_Gender .age {
     width: 10vw;
+}
+
+.Age_Gender .age input {
+    margin-top: 2vh;
 }
 .Age_Gender .age #Age {
     width: 4vw;
@@ -95,32 +99,58 @@ body {
     background: rgba(176, 186, 195, 0.40); 
 }
 .AgeText {
-    width: 40rem;
+    width: 10vw;
+    padding-left: 0.5vw;
     display: flex;
     justify-content: flex-start;
     color: #7C838A;
     margin: 0;
 }
 .Gender {
-    width: 30vw;
+    width: 16vw;
+    margin-left: 10vw;
 }
 .genderText  {
     margin: 0;
     color: #7C838A;
+    display: flex;
+    justify-content: center;
 
 }
 .genderTypes {
+    margin-top: 2vh;
     color: #7C838A;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .genderTypes input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0px solid;
+    border-radius: 50% ;
     color: #7C838A;
-    margin: 1vw;
-    fill: #DEE3E7;
+    background-color: #DEE3E7;
+    margin: 0 1vw;
+    width: 30px;
+    height: 30px;
+}
+.genderTypes input:checked{
+    background-color: #E5EFF8;
+    border: 2px solid;
+    padding: 10px;
+    font-size: 20px;
 }
 .genderTypes label {
     cursor: pointer;
+}
+
+.genderTypes .checkmark {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
 }
 .main_box #SignUp {
     margin-top: 4vh;
@@ -141,7 +171,7 @@ body {
 .Log_box {
     display: flex;
     flex-direction: row;
-    width: 21vw;
+    width: 16vw;
     justify-content: space-between;
 }
 .Log_box a {
@@ -157,15 +187,80 @@ body {
 
 
 /* Правая часть страницы */
+
 .SignUp_img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40vw;
-
 }
-
 .img {
     width: 50vm;
     height: 50vh;
+}
+
+/* Microsoft Lumia 550 */
+@media screen and (max-width: 1269px) {
+    .SignUp {
+        width: 100vw;
+        display: flex;
+        height: 100%;
+    }
+    .main_box {
+        width: 100vw;
+        height: 100%;
+    }
+    .SignUp_img {
+        display: none;
+        width: 0;
+    }
+    .img {
+        display: none;
+    }
+    .Gender {
+        width: 30vw;
+    }
+    .Log_box {
+        width: 40vw;
+    }
+    
+}
+/* Iphone 17 pro max */
+@media screen and (max-width: 480px) {
+    .SignUp {
+        width: 100vw;
+        display: flex;
+        height: h-full;
+    }
+    .main_box {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+    
+    }
+    .SignUp_img {
+        display: none;
+        width: 0;
+    }
+    .img {
+        display: none;
+    }
+    .Age_Gender{
+        width: 70vw;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .age {
+        width: 15vw;
+    }
+    #age {
+        width: 8vw;
+    }
+    .Gender {
+        width: 40vw;
+    }
+    .Log_box {
+        width: 60vw;
+    }
 }

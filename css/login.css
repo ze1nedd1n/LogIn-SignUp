@@ -30,15 +30,15 @@ body {
     margin-bottom: 0;
 }
 .Log .email {
-    width: 40rem;
-    height: 2.5rem;
+    width: 42vw;
+    height: 6vh;
     padding: 0 2em;
     border: 0px;
     border-radius: 10px;
     background: rgba(176, 186, 195, 0.40);  
 }
 .Log .text_email {
-    width: 40rem;
+    width: 41vw;
     display: flex;
     justify-content: flex-start;
     color: #7C838A;
@@ -47,14 +47,14 @@ body {
 }
 .Log .password {
     padding: 0 2em;
-    width: 40rem;
-    height: 2.5rem;
+    width: 42vw;
+    height: 6vh;
     border: 0px;
     border-radius: 10px;
     background: rgba(176, 186, 195, 0.40);
 }
 .Log .text_pass {
-    width: 40rem;
+    width: 41vw;
     display: flex;
     justify-content:flex-start ;
     color: #7C838A;
@@ -63,8 +63,8 @@ body {
 }
 .Log .log_here {
     margin-top: 7vh;
-    width: 40rem;
-    height: 2.5rem;
+    width: 42vw;
+    height: 6vh;
     border: 0px;
     border-radius: 10px;
     background: #E5EFF8;
@@ -106,4 +106,60 @@ body {
 .img {
     width: 50vm;
     height: 50vh;
+}
+
+
+
+
+/* Microsoft Lumia 550 */
+@media screen and (max-width: 1269px) {
+    .Log {
+        width: 100vw;
+        display: flex;
+        height: 100%;
+    }
+    .Log_img {
+        display: none;
+        width: 0;
+    }
+    .img {
+        display: none;
+    }
+    .CreateAccount {
+        width: 40vw;
+    }
+    
+}
+/* Iphone 17 pro max */
+@media screen and (max-width: 480px) {
+    .Log {
+        width: 100vw;
+        display: flex;
+        height: h-full;
+    }
+    .SignUp_img {
+        display: none;
+        width: 0;
+    }
+    .img {
+        display: none;
+    }
+    .Age_Gender{
+        width: 70vw;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .age {
+        width: 15vw;
+    }
+    #age {
+        width: 8vw;
+    }
+    .Gender {
+        width: 40vw;
+    }
+    .Log_box {
+        width: 60vw;
+    }
 }
