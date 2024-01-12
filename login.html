@@ -16,11 +16,14 @@
         </aside>
         <main class="Log">
             <h1 class="main_text">Login your Account</h1>
+            <span class="wrong">Wrong Login or Password</span>
             <p class="text_email">Email</p>
-            <input type="email" class="email" name="email" id="email" placeholder="Enter your email here">
+            <input type="email" class="input" name="email" id="email" placeholder="Enter your email here">
+            <span class="fill_field">Please, fill this field</span>
             <p class="text_pass">Password</p>
-            <input type="password" class="password" name="" id="password " placeholder="Enter your password here">
-            <button class="log_here">Login Here</button>
+            <input type="password" class="input" name="" id="password" placeholder="Enter your password here">
+            <span class="fill_field">Please, fill this field</span>
+            <input type="submit" value="Login Here" class="log_here" onclick="Login()"></input>
             <p class="or">- OR -</p>
             <div class="CreateAccount">
                 <p>Create an account?</p>

@@ -29,7 +29,22 @@ body {
     margin-top: 17vh;
     margin-bottom: 0;
 }
-.Log .email {
+.wrong{
+    display: none;
+    margin-top: 10vh;
+    padding: 0 12px;
+    width: 43vw;
+    border: 0px solid;
+    border-radius: 10px;
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.333333;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.Log .input {
     width: 42vw;
     height: 6vh;
     padding: 0 2em;
@@ -45,14 +60,7 @@ body {
     margin-top: 10vh;
     margin-bottom: 0;
 }
-.Log .password {
-    padding: 0 2em;
-    width: 42vw;
-    height: 6vh;
-    border: 0px;
-    border-radius: 10px;
-    background: rgba(176, 186, 195, 0.40);
-}
+
 .Log .text_pass {
     width: 41vw;
     display: flex;
@@ -70,6 +78,20 @@ body {
     background: #E5EFF8;
     font-size: 20px;
     font-weight: 500;
+}
+.fill_field {
+    display: none;
+    margin-top: 0;
+    padding: 0 12px;
+    width: 41vw;
+    border: 0px solid;
+    border-radius: 10px;
+    color: #6EB6FF;
+    font-size: 12px;
+    line-height: 1.333333;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 .Log .or {
     margin-top: 5vh;
