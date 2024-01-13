@@ -21,14 +21,15 @@ function SignUp(){
         user.age = age;
         user.gender = gender;
 
-        let users = JSON.stringify(user);
+        // let users = JSON.stringify(user);
         
-        fetch('./users.json').then(res=> res.json()).then(res => {
+        fetch('/users.json').then(res=> res.json()).then(res => {
+            let users = JSON.stringify(res);
             
             console.log(res);
         })
         i++;
-        console.log(users);
+        // console.log(users);
 
 
     }
