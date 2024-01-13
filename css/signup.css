@@ -5,6 +5,7 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     background: #E5EFF8;
+    z-index: auto;
 }
 .main_box{
     width: 50vw;
@@ -26,8 +27,24 @@ body {
     font-weight: 600;
     line-height: normal;
     font-style: normal;
-    margin-top: 10vh;
+    margin-top: 4vh;
     margin-bottom: 0;
+}
+.fill_field {
+    position: relative;
+    z-index: 2;
+    display: none;
+    margin-top: 0;
+    padding: 0 12px;
+    width: 46vw;
+    border: 0px solid;
+    border-radius: 10px;
+    color: #6EB6FF;
+    font-size: 12px;
+    line-height: 1.333333;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 .SignUp .nameText {
     width: 48vw;

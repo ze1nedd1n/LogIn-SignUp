@@ -14,15 +14,19 @@
             <div class="main_box">
                 <h1 class="createAccount">Create your Account</h1>
                 <p class="nameText">Name</p>
-                <input type="text" class="name" name="name" id="" placeholder="Enter your Name here">
+                <input type="text" class="name" name="name" id="name" placeholder="Enter your Name here">
+                <span class="fill_field">Please, fill this field</span>
                 <p class="emailText">Email</p>
-                <input type="email" class="email" name="Email" id="" placeholder="Enter your Email here">
+                <input type="email" class="email" name="Email" id="email" placeholder="Enter your Email here">
+                <span class="fill_field">Please, fill this field</span>
                 <p class="passText">Password</p>
-                <input type="password" class="password" name="Password" id="" placeholder="Enter your Password here">
+                <input type="password" class="password" name="Password" id="password" placeholder="Enter your Password here">
+                <span class="fill_field">Please, fill this field</span>
                 <div class="Age_Gender">
                     <div class="age">
                         <p class="AgeText">Age</p>
                         <input type="number" name="Age"  id="Age" placeholder="18">
+                        <span class="fill_field">Please, fill this field</span>
                     </div>
                     <div class="Gender">
                         <p class="genderText">Gender</p>
@@ -32,9 +36,10 @@
                             <input type="radio" id="Female" name="gender" value="Female" />
                             <label for="Female">Female</label>
                         </div>
+                        <span class="fill_field">Please select your gender: Male or Female"</span>
                     </div>
                 </div>
-                <input type="submit" value="Sign-Up" id="SignUp"></input>
+                <input type="submit" value="Sign-Up"  onclick="SignUp()" id="SignUp"></input>
                 <p class="or">- OR -</p>
                 <div class="Log_box">
                     <p>Already have an account?</p>
@@ -46,5 +51,6 @@
         <aside class="SignUp_img">
             <img src="/images/Finance, e-commerce, startup, workflow _ account, information, user, profile, data.png" class="img">
         </aside>
+        <script src="/script/signup.js"></script>
     </body>
 </html>
