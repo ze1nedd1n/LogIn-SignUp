@@ -134,11 +134,11 @@ body {
 
 
 /* Microsoft Lumia 550 */
-@media screen and (max-width: 1269px) {
+@media screen and (max-width: 1200px) {
     .Log {
         width: 100vw;
-        display: flex;
-        height: 100%;
+        position: relative;
+        height: 100vh;
     }
     .Log_img {
         display: none;
@@ -152,11 +152,11 @@ body {
     }
     
 }
-/* Iphone 17 pro max */
+/* Iphone 14 pro max */
 @media screen and (max-width: 480px) {
     .Log {
         width: 100vw;
-        display: flex;
+        position: absolute;
         height: h-full;
     }
     .SignUp_img {

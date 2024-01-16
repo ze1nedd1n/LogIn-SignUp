@@ -45,6 +45,7 @@ function Login(){
             document.getElementsByClassName("wrong")[0].style.display = "none";
             document.getElementsByClassName("text_email")[0].style.marginTop = "10vh";
             alert("Welcome, "+ users[email_index].name);
+            location="../index.html"
         }
         else{
             console.log("no");  
@@ -95,6 +96,7 @@ function check_fields_login(){
 
 
 function SignUp(){
+    
 
     if(check_fields_signUp()){
         console.log("work");
@@ -132,6 +134,10 @@ function SignUp(){
     }
 
 }
+// document.getElementById("SignUp").addEventListener("click", function(event) {
+//     event.preventDefault(); // Предотвращает отправку формы по умолчанию
+//     SignUp();
+// });
 
 
 function check_fields_signUp(){

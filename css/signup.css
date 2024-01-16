@@ -15,7 +15,7 @@ body {
 }
 .SignUp {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     width: 60vw;
     height: 100vh;
     align-items: center;
@@ -217,11 +217,11 @@ body {
 }
 
 /* Microsoft Lumia 550 */
-@media screen and (max-width: 1269px) {
+@media screen and (max-width: 1200px) {
     .SignUp {
         width: 100vw;
-        display: flex;
-        height: 100%;
+        position: relative;
+        height: 100vh;
     }
     .main_box {
         width: 100vw;
@@ -242,11 +242,11 @@ body {
     }
     
 }
-/* Iphone 17 pro max */
+/* Iphone 14 pro max */
 @media screen and (max-width: 480px) {
     .SignUp {
         width: 100vw;
-        display: flex;
+        position: absolute;
         height: h-full;
     }
     .main_box {

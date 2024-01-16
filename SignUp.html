@@ -11,21 +11,23 @@
     </head>
     <body>
         <main class="SignUp">
-            <div class="main_box">
+            <form class="main_box">
                 <h1 class="createAccount">Create your Account</h1>
-                <p class="nameText">Name</p>
-                <input type="text" class="name" name="name" id="name" placeholder="Enter your Name here">
+                <label for="name" class="nameText">Name</label>
+                <input type="text" class="name" name="name" id="name" placeholder="Enter your Name here" >
                 <span class="fill_field">Please, fill this field</span>
-                <p class="emailText">Email</p>
-                <input type="email" class="email" name="Email" id="email" placeholder="Enter your Email here">
+                <label for="email" class="emailText">Email</label>
+                <input type="email" class="email" name="Email" id="email" placeholder="Enter your Email here" >
                 <span class="fill_field">Please, fill this field</span>
-                <p class="passText">Password</p>
-                <input type="password" class="password" name="Password" id="password" placeholder="Enter your Password here">
+                <label for="password" class="passText">Password</label>
+                <input type="password" class="password" name="Password" id="password" placeholder="Enter your Password here" 
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" >
                 <span class="fill_field">Please, fill this field</span>
                 <div class="Age_Gender">
                     <div class="age">
-                        <p class="AgeText">Age</p>
-                        <input type="number" name="Age"  id="Age" placeholder="18">
+                        <label for="Age" class="AgeText">Age</label>
+                        <input type="number" name="Age"  id="Age" placeholder="18" >
                         <span class="fill_field">Please, fill this field</span>
                     </div>
                     <div class="Gender">
@@ -39,19 +41,18 @@
                         <span class="fill_field">Please select your gender: Male or Female"</span>
                     </div>
                 </div>
-                <input type="submit" value="Sign-Up"  onclick="SignUp()" id="SignUp"></input>
+                <button type="button"  onclick="SignUp()" id="SignUp">Sign-Up</button>
                 <p class="or">- OR -</p>
                 <div class="Log_box">
                     <p>Already have an account?</p>
                     <a class="Login" href="/login.html">Login</a>
                 </div>
-            </div>
+            </form>
 
         </main>
         <aside class="SignUp_img">
-            <img src="/images/Finance, e-commerce, startup, workflow _ account, information, user, profile, data.png" class="img">
+            <img src="./images/Finance, e-commerce, startup, workflow _ account, information, user, profile, data.png" class="img">
         </aside>
-        <script src="/script/signup.js"></script>
-        <script src="/script/login.js"></script>
+        <script src="./script/script.js"></script>
     </body>
 </html>
