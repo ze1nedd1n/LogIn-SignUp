@@ -8,10 +8,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     </head>
     <body>
         <main class="SignUp">
-            <form class="main_box">
+            <div class="main_box">
                 <h1 class="createAccount">Create your Account</h1>
                 <label for="name" class="nameText">Name</label>
                 <input type="text" class="name" name="name" id="name" placeholder="Enter your Name here" >
@@ -22,8 +24,18 @@
                 <label for="password" class="passText">Password</label>
                 <input type="password" class="password" name="Password" id="password" placeholder="Enter your Password here" 
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"
-                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" >
-                <span class="fill_field">Please, fill this field</span>
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required >
+                <span class="fill_field">Please, fill this field</span>        
+                <div id="message">
+                    <h3>Пароль должен содержать следующее:</h3>
+                    <div>
+                        <p id="letter" class="invalid"><b>Нижний регистр</b> a-z</p>
+                        <p id="capital" class="invalid"><b>Заглавная </b>A-Z</p>
+                        <p id="number" class="invalid"><b>Число</b></p>
+                        <p id="length" class="invalid">Минимум<b> 8 символов</b></p>
+                    </div>
+                </div>
+
                 <div class="Age_Gender">
                     <div class="age">
                         <label for="Age" class="AgeText">Age</label>
@@ -41,13 +53,13 @@
                         <span class="fill_field">Please select your gender: Male or Female"</span>
                     </div>
                 </div>
-                <button type="button"  onclick="SignUp()" id="SignUp">Sign-Up</button>
+                <input type="submit" value="Sign-Up" onclick="SignUp()" id="SignUp">
                 <p class="or">- OR -</p>
                 <div class="Log_box">
                     <p>Already have an account?</p>
                     <a class="Login" href="/login.html">Login</a>
                 </div>
-            </form>
+            </div>
 
         </main>
         <aside class="SignUp_img">
