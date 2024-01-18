@@ -121,6 +121,10 @@ function SignUp(){
 
             users.push(user);
             console.log(users);
+            Swal.fire({
+                title: "Аккаунт успешно создан",
+                icon: "success",
+              });
         }
         else{
             Swal.fire({
