@@ -1,0 +1,15 @@
+{
+  "name": "login-signup",
+  "version": "1.0.0",
+  "description": "Это проект для оценки умений в DARU. \r Срок до 17.01.2024\r Ниже задачи дл выполнений",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
